@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Verdana, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        font-size: 14px; /* Made the font slightly smaller */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border: 2px solid #38B6FF;
+    }
+    .page-title {
+        text-align: center;
+        color: darkblue;
+        font-size: 1.2em; /* Adjusted the font size */
+        font-weight: bold; /* Made the title bold */
+        margin-bottom: 10px; 
+    }
+    .sub-header {
+        text-align: center;
+        color: darkblue;
+        margin-bottom: 20px; /* Adjusted the margin */
+    }
+    .property {
+        margin-bottom: 40px; /* Increased spacing between properties */
+    }
+    .property-title {
+        font-weight: bold;
+        color: #8B4513;
+        margin-bottom: 20px; /* Increased spacing for more breathing room */
+    }
+    .property-details {
+        margin-bottom: 15px; /* Increased spacing between details */
+    }
+    .property-details b {
+        font-weight: bold;
+    }
+    .property-details ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+    .property-link {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #38B6FF;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-weight: bold; /* Made "View Property" bold */
+    }
+    .property-link:hover {
+        background-color: #2a8fbd;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        .container {
+            margin: 10px 5px;
+            padding: 15px;
+        }
+        .page-title, .sub-header {
+            font-size: 1em;
+        }
+        .property-details, .property-title {
+            font-size: 0.85em; /* Adjusted font size for mobile */
+        }
+        .property-link {
+            font-size: 0.8em;
+            padding: 8px 16px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="page-title">Investment Properties in Panama City Beach</div>
+    <div class="sub-header">by Melissa H. (September 14, 2023)</div>
+    
+    <!-- New properties added here -->
+    <div class="property">
+        <div class="property-title">11607 Sand Castle Lane, Panama City Beach, FL 32407</div>
+        <div class="property-details"><b>Purchase Price:</b> $519,000</div>
+        <div class="property-details">
+          <b>Features:</b> 
+          <ul>
+            <li>Short-term rental approved</li>
+            <li>Assumable loan for $189K of the purchase price at 3.125%</li>
+            <li>Close to Shipwreck Island Water Park and the Miller County Pier</li>
+          </ul>
+        </div>
+        <div class="property-details"><a href="https://www.flexmls.com/share/9HFcw/11607-Sand-Castle-Lane-Panama-City-Beach-FL-32407" class="property-link">View Property</a></div>
+    </div>
+
+    <div class="property">
+        <div class="property-title">605 Malaga Place, Panama City Beach, FL 32413</div>
+        <div class="property-details"><b>Purchase Price:</b> $579,900</div>
+        <div class="property-details">
+          <b>Features:</b> 
+          <ul>
+            <li>Custom-built with inlaw suite</li>
+            <li>3 minute drive to the beach</li>
+            <li>Short term rental approved</li>
+          </ul>
+        </div>
+        <div class="property-details"><a href="https://www.flexmls.com/share/9HFl3/605-Malaga-Place-Panama-City-Beach-FL-32413" class="property-link">View Property</a></div>
+    </div>
+
+</div>
+
+</body>
+</html>
