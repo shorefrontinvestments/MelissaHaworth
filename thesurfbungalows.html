@@ -14,14 +14,25 @@
             color: #333;
             line-height: 1.6;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
             align-items: flex-start;
+            background: url('https://github.com/shorefrontinvestments/melissahaworth/blob/main/beach%20bungalows.jpeg?raw=true') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.85); /* White background with even lower opacity */
+            margin-bottom: 20px;
         }
 
         .image-container {
             flex: 1;
-            border: 1px solid #333;
-            padding: 20px 20px 20px 20px;
+            min-width: 30%;
+            max-width: 40%;
+            padding: 20px;
             margin-right: 20px;
             text-align: center;
             position: -webkit-sticky;
@@ -29,20 +40,12 @@
             top: 20px;
         }
 
-        .image-caption {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .text-container {
-            flex: 3;
-        }
-
         img {
             max-width: 100%;
             border: 1px solid #333;
             display: block;
             margin: 0 auto;
+            border-radius: 5px;
         }
 
         a {
@@ -52,19 +55,6 @@
 
         a:hover {
             text-decoration: underline;
-        }
-
-        /* Mobile styles */
-        @media only screen and (max-width: 768px) {
-            body {
-                flex-direction: column;
-            }
-
-            .image-container {
-                position: relative;
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
         }
 
         .info-buttons {
@@ -80,6 +70,8 @@
             font-weight: bold;
             transition: background-color 0.3s;
             text-align: center;
+            border: none;
+            margin-bottom: 10px; /* Adding space when vertically aligned */
         }
 
         .call-button {
@@ -100,23 +92,38 @@
             background-color: #0056b3;
         }
 
+        /* Mobile styles */
+        @media only screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .image-container {
+                position: relative;
+                margin-right: 0;
+                margin-bottom: 20px;
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="image-container">
+    <div class="image-container container">
         <a href="https://zpr.io/s5hm4kgDdfkg" target="_blank">
             <img src="https://github.com/shorefrontinvestments/melissahaworth/blob/main/surfbungalows.png?raw=true"
                 alt="Surf Bungalows Image">
         </a>
-        <p class="image-caption">Click on the image to view online brochure</p>
+        <p>Click on the image to view online brochure</p>
         <div class="info-buttons">
             <a href="tel:4696582869" class="call-button">Call us!</a>
             <a href="mailto:melissa.haworth@exprealty.com" class="email-button">Email us!</a>
         </div>
     </div>
-    <div class="text-container">
-                <h1>Margaritaville™ Surf Bungalows</h1>
+    <div class="text-container container">
+        <h1>Margaritaville™ Surf Bungalows</h1>
 
         <p>These are the Surf Bungalows located in 'Surf Village" at the Margaritaville™ Beach Cottage Resort. As soon as we have updated photos of these 'under construction' bungalows we will be posting them, so keep an eye out! Until then, enjoy some sneak peeks from Margaritaville™ themselves.</p>
     
@@ -129,4 +136,5 @@
         <p>Surf Bungalow owners are still members of the master association but pay ½ the dues of other members and as a result, have ½ vote in association matters. Also, Surf Bungalow owners are part of the Club, which is required for all homeowners within the community. The Surf Bungalow Condo Association dues primarily cover the maintenance and repairs of the common areas surrounding the Surf Bungalows. Master HOA dues and fees are $1165.00/quarter plus $403.50/quarter for Condo fees. Water, trash, landscaping, TV, Internet and phone are all included. Club Dues are $150/month.</p>
     </div>
 </body>
+
 </html>
