@@ -24,7 +24,7 @@
             border: 1px solid #333;
             padding: 20px;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.85); /* White background with even lower opacity */
+            background-color: rgba(255, 255, 255, 0.85);
             margin-bottom: 20px;
         }
 
@@ -71,16 +71,16 @@
             transition: background-color 0.3s;
             text-align: center;
             border: none;
-            margin-bottom: 10px; /* Adding space when vertically aligned */
+            margin-bottom: 10px;
         }
 
         .call-button {
-            background-color: #4CAF50; /* Green */
+            background-color: #4CAF50;
             color: white;
         }
 
         .email-button {
-            background-color: #007BFF; /* Blue */
+            background-color: #007BFF;
             color: white;
         }
 
@@ -96,14 +96,25 @@
         @media only screen and (max-width: 768px) {
             body {
                 flex-direction: column;
+                padding: 0;
+            }
+
+            .container {
+                margin-left: 20px;
+                margin-right: 20px;
+                width: 90%;
+                max-width: 90%;
             }
 
             .image-container {
                 position: relative;
                 margin-right: 0;
                 margin-bottom: 20px;
-                min-width: 100%;
-                max-width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
             }
         }
 
